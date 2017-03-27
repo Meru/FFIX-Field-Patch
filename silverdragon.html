@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Silver Dragon</title>
+		<style>
+			.anim1 {
+			width: 672px;
+			height: 320px;
+			background-image: url("https://merup.github.io/FFIX-Field-Patch/assets/img/SilvDragAfter.png");
+			animation: play .8s steps(10) infinite;
+			}
+			.anim2 {
+			width: 672px;
+			height: 320px;
+			background-image: url("https://merup.github.io/FFIX-Field-Patch/assets/img/SilvDragBefore.png");
+			animation: play .8s steps(10) infinite;
+			}
+			@keyframes play {
+			from { background-position:    0px; }
+			to { background-position: -6720px; }
+			}
+		</style>
+	</head>
+	<body style="background-color:#CCCCCC;">
+		<div style="width:672px; margin:auto;">
+			<div class="anim1"></div>
+			<br>
+			<div class="anim2"></div>
+		</div>
+	</body>
+</html>
+
