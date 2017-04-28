@@ -1,0 +1,66 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $body-text-color;
+    background-color: #f2f2f2;
+}
+
+.page-header {
+    background-image: url("{{ '/assets/img/FFIX_header3.png?v=' | append: site.github.build_revision | relative_url }}");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #f2f2f2;
+    padding: 1rem 6rem;
+}
+
+.project-name {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-top: 190px;
+    margin-bottom: 0.1rem;
+    margin-left: 320px;
+}
+
+.btn {
+    color: #000000;
+    background-color: #CCCCCC;
+    margin-bottom: 0;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #e1c06f;
+    border-color: #e1c06f;
+}
+
+.btn2 { display: inline-block; margin-bottom: 1rem; color: rgba(255, 255, 255, 0.7); background-color: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); border-style: solid; border-width: 1px; border-radius: 0.3rem; transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+.btn2:hover { color: rgba(255, 255, 255, 0.8); text-decoration: none; background-color: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); }
+.btn2 + .btn2 { margin-left: 1rem; }
+@media screen and (min-width: 64em) { .btn2 { padding: 0.75rem 1rem; } }
+@media screen and (min-width: 42em) and (max-width: 64em) { .btn2 { padding: 0.6rem 0.9rem; font-size: 0.9rem; } }
+@media screen and (max-width: 42em) { .btn2 { display: block; width: 100%; padding: 0.75rem; font-size: 0.9rem; }
+.btn2 + .btn2 { margin-top: 1rem; margin-left: 0; } }
+
+.btn2 { color: #000000; background-color: #CCCCCC; margin-bottom: 0; }
+.btn2:hover { color: #000000; background-color: #d14f68; border-color: #d14f68;}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #C09656;
+}
+/*
+.main-content table th, .main-content table td {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.8rem;
+}*/
