@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>FFIX Field Patch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="{{ '/assets/css/twentytwenty.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" type="text/css" />
+	</head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
+      <!-- <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a> -->
+      <!-- <a href="" class="btn">Download</a> -->
+      <!-- <a href="" class="btn">(Mirror)</a> -->
+    </section>
+
+    <script src="{{ '/assets/js/jquery.v1.10.1.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.event.move.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.twentytwenty.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+    <div style="width:832px; height:468px; margin:auto;">
+        <div class="twentytwenty-container">
+            <img src="{{ '/assets/img/1.png?v=' | append: site.github.build_revision | relative_url }}" />
+            <img src="{{ '/assets/img/2.png?v=' | append: site.github.build_revision | relative_url }}" />
+        </div>	
+    </div>	 
+		  	  
+    <section class="main-content">
+
+	    {{ content }}
+
+      <footer class="site-footer">
+<!--         <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span> -->
+      </footer>
+    </section>
+
+    <script>
+        $(window).load(function(){
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.33});
+            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.33, orientation: 'vertical'});
+        });
+    </script>
+  </body>
+</html>
